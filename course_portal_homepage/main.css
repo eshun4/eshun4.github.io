@@ -1,0 +1,24 @@
+#header{
+    text-align: center;
+}
+
+#body{
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin-left:auto;
+    margin-right:auto;
+    width: 300px;
+}
+
+#coursetitle{
+    text-align: center;
+}
+
+ul li
+{
+list-style-type: none;
+padding: 5px 5px 5px 5px;
+}
