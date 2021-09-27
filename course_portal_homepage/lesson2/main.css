@@ -26,6 +26,7 @@ footer{
     margin: 5px 0;
 }
 .column{
+    box-shadow: 5px 10px;
     text-align: center;
     flex:1;
     border:1px solid rgba(63, 60, 42, 0.733);
