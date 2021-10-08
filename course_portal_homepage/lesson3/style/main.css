@@ -83,7 +83,7 @@ footer{
     }
 }
 
-img{
+.img{
     object-fit:contain;
     width: 65%;
     height:65%;
@@ -96,7 +96,7 @@ img{
 h3{
     color:white;
 }
-#logo{
+.logo{
     width: 25%;
     height:25%;
 }
