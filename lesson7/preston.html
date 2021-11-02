@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preload" href="/css/normalize.css" as="style">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+<title>My Weather Hub | Preston, Idaho</title>
+<!-- CSS Stylesheet -->
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="/lesson7/css/preston.css" rel="stylesheet" type="text/css">
+</head>
+
+<body style="background-color:rgba(150, 129, 10, 0.733);" id="body">
+    <script src="/lesson7/js/preston.js"></script> 
+    <div>
+        <aside id="banner-top">
+            Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+        </aside>
+        <noscript>JavaScript needs to be enabled to enhance the features of this page.</noscript>
+        <header id="header">  
+            <div style="background-color:rgba(77, 65, 1, 0.733); " id="coursetitle" > <img src="/lesson3/media/my_logo.png" class="logo" alt="my logo" width="170" 
+                height="110">
+                <h1 style="color: white;">My Weather Hub</h1>
+                <p style="color: white;">Daily Weather at your doorstep !</p>
+            </div>
+        </header>  
+    </div>
+    <div class="wrapper">
+        <nav>
+            <ul class="navigation ">
+                <li><a  onClick="toggleMenu()" href="#">&#9776; Menu</a></li>
+                <li><a class="active" href="/course_portal_homepage/index.html">My Portal</a></li>
+                <li><a href="/lesson7/preston.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="/lesson7/pages/gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main >
+            <section id="pagecontent">
+                <h2 style="color: white;" class="Preston">Preston, Idaho</h2>
+                <div class="box">
+                    <picture id="heroImage">
+                         <source media="(min-width: 64em)" srcset="images/large.jpg" alt="largeImage">
+                         <source media="(min-width: 37.5em)" srcset="images/medium.jpg" alt="smallImage">
+                         <img src="images/small.jpg" alt="heroImage" style="width:100%;">
+                    </picture>
+                <div id="weatherSummary">
+                    <h2 class="summaryHeader">Weather Summary</h2>
+                        <ul id="labels">
+                            <li>Currently: Rainy</li>
+                            <li>High: 54 &#8457;</li>
+                            <li>Wind Chill: <span id="windchill"></span> &#8457;</li>
+                            <li>Humidity: 95% </li>
+                            <li>Wind Speed: 12 mph</li>
+                        </ul>
+                </div>
+                </div>
+                <div class="box" id="forecastImage">
+                    <h2 class="summaryHeader">5 Day Forecast</h2>
+                    <table>
+                        <tr>
+                          <th>Sat</th>
+                          <th>Sun</th>
+                          <th>Mon</th>
+                          <th>Tue</th>
+                          <th>Wed</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="images/sunny.png" alt="Sunny icon" style="width:100%;">
+                                <p>65&#8457;</p> 
+                            </td>
+                            <td>
+                                <img src="images/sunny.png" alt="Sunny icon" style="width:100%;">
+                                <p>87&#8457;</p> 
+                            </td>
+                            <td>
+                                <img src="images/sunny.png" alt="Sunny icon" style="width:100%;">
+                                <p>75&#8457;</p> 
+                            </td>                        
+                            <td>
+                                <img src="images/sunny.png" alt="Sunny icon" style="width:100%;">
+                                <p>87&#8457;</p> 
+                            </td>                        
+                            <td>
+                                <img src="images/sunny.png" alt="Sunny icon" style="width:100%;">
+                                <p>72&#8457;</p> 
+                            </td>                    
+                        </tr>
+                    </table>
+                </div>
+                <div class="box">
+                    <h2 class="summaryHeader">Article Title</h2>
+                    <p><img src="images/day_in_idaho_image.jpg" id="cityImage" alt="cityImage" style="width:300px;height:250px;margin-right:15px;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+                    </div>
+                <div class="box">
+                    <div id="contactInfo"><p>  <img id="prestonMap" src="images/preston_idaho_map.jpg"  alt="Map of Preston Idaho" style="width:300px;height:250px;margin-right:15px;margin-bottom:15px;"> <h2>Contact Information</h2>
+                        <p>&#128231; myweatherhub.emailus</p>
+                        <p>&#9742; (000)-111-2222</p>
+                        <div id="iconBar">
+                            <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter" style="font-size:36px; color:rgb(94, 136, 252)"></i></a>
+                            <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" style="font-size:36px; color:rgb(37, 32, 4)"></i></a>
+                            <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-f" style="font-size:36px; color:rgb(16, 54, 160)"></i></a>
+                        </div>     
+                    </div>                
+                </div> 
+            </section>  
+        </main>
+    </div>
+<footer>
+    <h5 >&#169; 2021 | Kofi Junior Eshun  <a href=" https://developer.mozilla.org/en-US/">MDN Documentation Site</a> | BYU-Idaho Last Updated: <script> 
+    lastModified();
+    </script>
+</h5>
+</footer>
+</body>
+</html> 
