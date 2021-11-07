@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preload" href="/css/normalize.css" as="style">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+<title>My Weather Hub | My Gallery</title>
+<!-- CSS Stylesheet -->
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="/lesson8/css/preston.css" rel="stylesheet" type="text/css">
+</head>
+
+<body style="background-color:rgba(150, 129, 10, 0.733);" id="body">
+    <script src="/lesson8/js/preston.js"></script> 
+    <div>
+        <aside id="banner-top">
+            Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+        </aside>
+        <noscript>JavaScript needs to be enabled to enhance the features of this page.</noscript>
+        <header id="header">  
+            <div style="background-color:rgba(77, 65, 1, 0.733); " id="coursetitle" > <img src="/lesson3/media/my_logo.png" class="logo" alt="my logo" width="170" 
+                height="110">
+                <h1 style="color: white;">My Weather Hub</h1>
+                <p style="color: white;">Daily Weather at your doorstep !</p>
+            </div>
+        </header>  
+    </div>
+    <div class="wrapper">
+        <nav>
+            <ul class="navigation ">
+                <li><a  onClick="toggleMenu()" href="#">&#9776; Menu</a></li>
+                <li><a class="active" href="/course_portal_homepage/index.html">My Portal</a></li>
+                <li><a href="/lesson8/preston.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="/lesson8/pages/stormcenter.html">Storm Center</a></li>
+                <li><a href="/lesson8/pages/gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main >
+            <div class="box2">
+                <form action="/lesson8/pages/thanks.html">
+                    <label for="fullname">Full Name:</label><br><br>
+                    <input type="text" name="f_name" id="fullname" required minlength="5" pattern="^([A-Za-z]+[,.]?[ ]?|[A-Za-z]+['-]?)+$"><br><br>
+                    <label for="email">Email:</label><br><br>
+                    <input type="email" name="email" id="email" placeholder="youremail@youremail.com"><br><br>
+                    <label for="tel">Phone number:</label><br><br>
+                    <input type="tel" name="tel" id="tel" required><br><br>
+                    <label for="zip">ZIP code:</label><br><br>
+                    <input type="number" name="zip" id="zip"><br><br>
+                    <label for="stormDate">Storm date:</label><br><br>
+                    <input type="date" name="stormDate" id="stormDate"><br><br>
+                    <label for="stormType">Storm type:</label><br><br>
+                    <input list="storms" name="stormType" id="stormType"><br><br>
+                        <datalist id="storms">
+                            <option value="Flash Flood">
+                            <option value="Hail">
+                            <option value="Hurricane">
+                            <option value="Thunderstorm">
+                            <option value="Tornado">
+                        </datalist>
+                    <label for="stormrange">Storm Severity:</label><br><br>
+                    <input type="range" id="stormrange" name="stromrange" min="0" max="10"
+                    list="tickmarks" oninput="adjustRating(this.value);" onchange="adjustRating(this.value);">
+                    <span id="ratingvalue">5</span><br><br>
+                       <datalist id="tickmarks">
+                            <option value="0">
+                            <option value="1">
+                            <option value="2">
+                            <option value="3">
+                            <option value="4">
+                            <option value="5">
+                            <option value="6">
+                            <option value="7">
+                            <option value="8">
+                            <option value="9">
+                            <option value="10">
+                       </datalist>
+                       <label for="selectRegion">Where do you live?</label><br><br>
+                       <select name="regions" id="selectRegion">
+                           <option value="" disabled selected>Select Region ...</option>
+                           <option value="Preston">Preston</option>
+                           <option value="Soda Springs">Soda Springs</option>
+                           <option value="Fish Haven">Fish Haven</option>
+                       </select><br><br>
+                       <label for="danger1">Are you in danger?</label><br>
+                       <label for="danger1" class="select">yes</label>
+                       <input type="radio" name="danger" id="danger1" value="yes"><br>
+                       <label for="danger2" class="select">maybe</label>
+                       <input type="radio" name="danger" id="danger2" value="maybe"><br>
+                       <label for="danger3" class="select">no</label>
+                       <input type="radio" name="danger" id="danger3" value="no"><br><br>
+                       <label for="comments">Additional Comments:</label><br><br>
+                       <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
+                    <br><br><br>
+                    <input type="submit" value="Submit">
+                  </form> 
+            </div>
+        </main>
+    </div>
+<footer>
+    <script src="/lesson7/js/lazy-load.js"></script> 
+    <h5 >&#169; 2021 | Kofi Junior Eshun  <a href=" https://developer.mozilla.org/en-US/">MDN Documentation Site</a> | BYU-Idaho Last Updated: <script> 
+    lastModified();
+    </script>
+</h5>
+</footer>
+</body>
+</html> 
