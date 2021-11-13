@@ -5,18 +5,21 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preload" href="/css/normalize.css" as="style">
+        <link rel="preload" href="/course_portal_homepage/normalize.css" as="style">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
 <title>My Weather Hub | Preston, Idaho</title>
 <!-- CSS Stylesheet -->
-<link rel="stylesheet" href="css/normalize.css">
-<link href="/lesson4/css/preston.css" rel="stylesheet" type="text/css">
+<link href="/lesson9/css/main.css" rel="stylesheet" type="text/css">
 </head>
 
 <body style="background-color:rgba(150, 129, 10, 0.733);" id="body">
-    <script src="/lesson4/js/preston.js"></script> 
+    <script src="/lesson9/js/preston.js"></script> 
     <div>
+        <aside id="banner-top">
+            Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+        </aside>
+        <noscript>JavaScript needs to be enabled to enhance the features of this page.</noscript>
         <header id="header">  
             <div style="background-color:rgba(77, 65, 1, 0.733); " id="coursetitle" > <img src="/lesson3/media/my_logo.png" class="logo" alt="my logo" width="170" 
                 height="110">
@@ -28,31 +31,32 @@
     <div class="wrapper">
         <nav>
             <ul class="navigation ">
-                <li><a onClick="toggleMenu()" href="#">&#9776; Menu</a></li>
-                <li><a href="/course_portal_homepage/index.html">My Portal</a></li>
+                <li><a  onClick="toggleMenu()" href="#">&#9776; Menu</a></li>
+                <li><a class="active" href="/course_portal_homepage/index.html">My Portal</a></li>
                 <li><a href="/lesson9/index.html">Home</a></li>
-                <li><a href="/lesson4/preston.html">Preston</a></li>
+                <li><a href="/lesson8/preston.html">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
                 <li><a href="#">Storm Center</a></li>
-                <li><a href="#">Gallery</a></li>
+                <li><a href="/lesson8/pages/gallery.html">Gallery</a></li>
             </ul>
         </nav>
         <main >
-            <section id="pagecontent">
-                <h2 style="color: white;" class="Preston">Preston, Idaho</h2>
-                <div class="box">Hero w/ weather summary</div>
-                <div class="box">5 Day Forecast</div>
-                <div class="box">Article</div>
-                <div class="box">Contact Information</div> 
-            </section>  
+            <div id="towns"></div>
         </main>
     </div>
 <footer>
-    <h5 >&#169; 2021 | Kofi Junior Eshun  <a href=" https://developer.mozilla.org/en-US/">MDN Documentation Site</a> | BYU-Idaho Last Updated: <script >
+    <h5 >&#169; 2021 | Kofi Junior Eshun  <a href=" https://developer.mozilla.org/en-US/">MDN Documentation Site</a> | BYU-Idaho Last Updated: <script> 
     lastModified();
     </script>
 </h5>
+
+<h5>
+    Wireframes: <a href="https://wireframe.cc/jfehGP" target="_blank">Large</a> 
+    <a href="https://wireframe.cc/xH5jNb" target="_blank">Medium</a>
+    <a href="https://wireframe.cc/C1auGy" target="_blank">Small</a>
+</h5>
 </footer>
+<script src="/lesson9/js/townData.js"></script> 
 </body>
 </html> 
