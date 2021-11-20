@@ -1,0 +1,289 @@
+body{
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper{
+    max-width:960px;
+    width:95%;
+    margin:5px auto;
+}
+
+footer{
+    padding: 0 15px;
+    text-align:center;
+}
+
+h3{
+    color:white;
+}
+
+.logo{
+    float: left;
+    padding: 0 10px 0 0;
+}
+
+#coursetitle{
+    text-align: left;
+    box-shadow: 2px 5px;
+    padding:1%
+}
+
+#pagecontent{
+    background:rgba(77, 65, 1, 0.733);
+    box-shadow: 2px 5px ;
+    padding:1%;
+}
+
+.Preston{
+    text-align: center;
+}
+
+
+
+/* Small/Phone View ***************/
+nav {
+	margin: 0 auto;
+	max-width: 980px;
+	background-color: rgba(77, 65, 1, 0.733);
+    box-shadow: 2px 5px ;
+}
+.navigation {
+	list-style: none;
+	padding: 0;
+    margin:5px auto;
+}
+
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	font-weight: 700;
+	transition: 0.5s;
+}
+.navigation a:hover {
+	color: white;
+	background-color: rgba(100, 100, 97, 0.733);
+}
+/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+  <ul class="navigation responsive">
+*/
+
+.responsive li {
+	display: block;
+}
+
+
+@media only screen and (min-width: 32.5em) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+}
+
+
+.box {
+    margin : 20px;
+    margin-bottom : 0;
+    padding : 20px;
+    border-style :groove;
+    border-color:black;
+    background-color : rgba(100, 100, 97, 0.733);
+    color:white;
+	content: "";
+  	display: grid;
+  	clear: both;
+	  
+} 
+
+.box2{
+	margin : 20px;
+    margin-bottom : 0;
+    padding : 20px;
+    border-style :dashed;
+    border-color:black;
+    background-color : rgba(100, 100, 97, 0.733);
+    color:white;
+	content: "";
+  	display: grid;
+  	clear: both;
+	display:flex;
+	justify-content: center;
+	text-align:center;
+}
+
+  .weatherSummary{
+	list-style-type: none;
+	text-align: left;
+}
+  
+#idahoImage {
+	display : block;
+	height : 350px;
+	width : 100%;
+	margin : 0 auto;
+} 
+
+#weatherSummary ul {
+	list-style-type : none;
+	
+} 
+
+.grid {
+		display : grid;
+		grid-template-columns : 1fr 1fr;
+}
+		
+#labels {
+		text-align : center;
+		padding : 0;	
+}
+		
+		
+#forecast {
+		padding : 1.5rem;
+		display : none;	
+} 
+
+.summaryHeader{
+		text-align : center;
+}
+
+
+
+@media (max-width: 32.5em) {
+	#forecastImage {
+	  display: none;
+	}
+}
+
+table {
+	margin : 0 auto;
+	width : 90%;
+	background-color : black;
+}
+
+table, th, td {
+	border : black solid 1px;
+    font-family: 'Roboto', sans-serif;
+}
+
+th {
+	font-size : 1.25rem;
+	background-color : rgba(77, 65, 1, 0.733);
+}
+	
+td {
+	padding-top : 10px;
+	text-align : center;
+	font-size : 1.25rem;
+	background-color : rgba(100, 100, 97, 0.733);
+} 
+
+#cityImage{
+	float : left;
+}
+
+
+#prestonMap{
+	float : left;
+}
+
+noscript {
+	margin : 1rem;
+	background-color : rgba(100, 100, 97, 0.733);
+    color:white;
+	width : 100%;
+}
+
+#banner-top {
+	display : none;
+	text-align : center;
+	background-color : rgba(100, 100, 97, 0.733);
+	color:white;
+	padding : 0.75rem;
+} 
+
+.active {
+	font-weight : bold;
+	text-decoration : underline;
+	color : black;
+} 
+
+#heroImage {
+	display : block;
+	height : auto;
+	width : 100%;
+	margin : 0 auto;
+} 
+
+
+.img:hover {
+	box-shadow: 0 0 50px #333;
+}
+
+#gallery {
+	display : grid;
+	grid-template-columns : 1fr;
+	gap : 1rem;
+	margin : 2rem;
+}
+ 
+@media screen and (min-width: 650px) {
+	#gallery {
+		grid-template-columns : 1fr 1fr;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	#gallery {
+		grid-template-columns : 1fr 1fr 1fr;
+	}
+	main {
+		max-width : 1300px;
+	}
+	.boxImage:hover {
+		box-shadow : 0 0 15px #333;
+	}
+} 
+
+.boxImage {
+	display : block;
+	margin : 1rem auto;
+	max-width : 100%;
+	width : 100%;
+	height : auto;
+	box-shadow : 3px 3px 10px gray;
+}
+.boxImage p {
+	padding-left : 1rem;
+	font-style : italic;
+}
+.boxImage img {
+	width : 100%;
+	height : 100%px;
+} 
+
+.thanks{
+	display:flex;
+	justify-content: center;
+	text-align:center;
+}
+

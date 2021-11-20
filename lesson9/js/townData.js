@@ -1,4 +1,3 @@
-// This is to display the data from the JSON file on the page
 const requestURL = '/lesson9/json/towndata.json';
 const towns2get = [
     'Preston',
