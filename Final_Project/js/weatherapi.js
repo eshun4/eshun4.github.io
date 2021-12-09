@@ -1,6 +1,6 @@
 // This is to call the data from the API
 let cityId = 4794457;
-const apiKey = '5283d5540266ec837780c1439b818074';
+const apiKey = 'a74fc85a81c9ebd710d75f559a6f40ca';
 let lat = 38.6582;
 let lon = -77.2497;
 
@@ -33,7 +33,7 @@ fetch(apiURL_forecast)
 
     let day = 0;
 	  dailyForecast.forEach(forecast => {
-	  let x = new Date(forecast.dt);
+	  let x = new Date(forecast.dt * 1000);
     document.getElementById('temp'+(day+1)).textContent = Math.round(forecast.temp.max) + ' °F';
     document.getElementById('img'+(day+1)).src = "https://openweathermap.org/img/w/" + forecast.weather[0].icon + ".png";
     document.getElementById('img'+(day+1)).alt = forecast.weather[0].description
@@ -42,6 +42,7 @@ fetch(apiURL_forecast)
   
 	});
 });
+
 
 var slideIndex = 0;
 showSlides();
@@ -57,3 +58,4 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 10000); // Change image every 2 seconds
 } 
+

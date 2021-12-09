@@ -9,7 +9,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<title>Prince William County Chamber of Commerce</title>
+<title>PWCCC | Join</title>
 <!-- CSS Stylesheet -->
         <link rel="stylesheet" href="css/normalize.css">
         <link href="/Final_Project/css/large.css" rel="stylesheet" type="text/css">
@@ -24,7 +24,7 @@
             <a href=""> Member Directory </a> |  
         <a href=""> Member Login </a>    
      </h5>
-     <button class="button_red">Join Now</button> 
+     <button class="button_red"><a href="/Final_Project/pages/join.html"> Become a Member</a> </button>
     </div>
 </header>  
 <br>
@@ -158,10 +158,45 @@
                   <br>
                   
                   <div class="action_banner">
-                    <h2> Apply for your Membership 
-                 </h2>
-                 <button class="button_red">Membership Application Form</button> 
-                   
+                    <h2> Membership Application Form</h2>
+                </div>
+                <div class="popup-overlay"> 
+                    <div class="popup-box-container">
+                        <div class="check-container">
+                            <i class="fas fa-check"> </i>
+                        </div>
+                        <div class="popup-message-container">
+                            <form action="/Final_Project/pages/thanks.html">
+                                <label for="fullname">First name :</label><br><br>
+                                <input type="text" name="f_name" id="fullname" required minlength="5" pattern="^([A-Za-z]+[,.]?[ ]?|[A-Za-z]+['-]?)+$"><br><br>
+                                <label for="fullname">Last name :</label><br><br>
+                                <input type="text" name="f_name" id="fullname" required minlength="5" pattern="^([A-Za-z]+[,.]?[ ]?|[A-Za-z]+['-]?)+$"><br><br>
+                                <label for="email">Email:</label><br><br>
+                                <input type="email" name="email" id="email" required placeholder="youremail@youremail.com"><br><br>
+                                <label for="tel">Phone number:</label><br><br>
+                                <input type="tel" name="tel" id="tel" required><br><br>
+                                <label for="fullname">Bussinness Name :</label><br><br>
+                                <input type="text" name="f_name" id="fullname"><br><br>
+                                <label for="fullname">Businness Address:</label><br><br>
+                                <input type="text" name="f_name" id="fullname"><br><br>
+                                <label for="fullname">Businness Website:</label><br><br>
+                                <input type="text" name="f_name" id="fullname"><br><br>
+                                <label for="comments">Business Description:</label><br><br>
+                                   <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
+                                <br><br><br>
+                                   <label for="selectRegion">Membership Level </label><br><br>
+                                   <select name="regions" id="selectRegion">
+                                       <option value="" disabled selected>Select...</option>
+                                       <option value="Preston">Non-profit ($100)</option>
+                                       <option value="Soda Springs">Bronze ($200)</option>
+                                       <option value="Fish Haven">Silver ($400)</option>
+                                       <option value="Fish Haven">Gold ($1000)</option>
+                                   </select><br><br>
+                                <input type="submit" value="Submit">
+                                <input type="submit" value="close" class="close_button">
+                        </div>
+                    </div>
+
                 </div>
         </main>
             
